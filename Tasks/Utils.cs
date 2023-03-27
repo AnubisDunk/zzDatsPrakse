@@ -39,10 +39,6 @@ public static class Utils
     }
     public static string FirstCharUpper(string input)
     {
-        if (string.IsNullOrEmpty(input))
-        {
-            return string.Empty;
-        }
         return $"{input[0].ToString().ToUpper()}{input.Substring(1)}";
     }
 }

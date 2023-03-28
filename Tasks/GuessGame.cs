@@ -3,10 +3,10 @@ class GuessGame
     public string number { get; private set; }
     public List<int> numList { get; private set; }
     public int attempts { get; private set; }
-    public GuessGame(string number, int attempts)
+    public GuessGame(int input, int attempts)
     {
         this.attempts = attempts;
-        this.number = number;
+        this.number = input.ToString();
         numList = new List<int>();
         for (int i = 0; i < number.Length; i++)
         {
@@ -26,7 +26,7 @@ class GuessGame
             {
                 pv++;
             }
-            if (numList.Contains(guess[i]))
+            if (numList.Contains(guess[i]) && !(guess[i] == number[i]))
             {
                 pm++;
             }

@@ -2,9 +2,10 @@
 {
     static void Main(string[] args)
     {
-        //System.Console.WriteLine(Utils.TranslateToLat("I want to find my job")); // Uzdemums 2
+        System.Console.WriteLine(Utils.TranslateToLat("I want to find my job")); // Uzdemums 2
         bool isWin = false;
-        GuessGame game = new GuessGame(1234.ToString(), 3);
+        
+        GuessGame game = new GuessGame(8501, 8);  //skaitlis , meginajumi
 
         for (int i = 0; i < game.attempts; i++)
         {

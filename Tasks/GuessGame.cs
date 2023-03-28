@@ -1,35 +1,32 @@
 class GuessGame
 {
-    int number { get; set; }
+    public string number { get; private set; }
     public List<int> numList { get; private set; }
-    public char[] numArr { get; private set; }
     public int attempts { get; private set; }
-    public GuessGame(int number, int attempts)
+    public GuessGame(string number, int attempts)
     {
         this.attempts = attempts;
         this.number = number;
-        this.numArr = number.ToString().ToCharArray();
         numList = new List<int>();
-        foreach (char item in numArr)
+        for (int i = 0; i < number.Length; i++)
         {
-            if (!numList.Contains(item))
+            if (!numList.Contains(number[i]))
             {
-                numList.Add(item);
+                numList.Add(number[i]);
             }
         }
     }
-    public void Guess(int guess)
+    public void Guess(string guess)
     {
-        char[] guessArr = guess.ToString().ToCharArray();
         int pv = 0;
         int pm = 0;
-        for (int i = 0; i < numArr.Length; i++)
+        for (int i = 0; i < number.Length; i++)
         {
-            if (guessArr[i] == numArr[i])
+            if (guess[i] == number[i])
             {
                 pv++;
             }
-            if (numList.Contains(guessArr[i]))
+            if (numList.Contains(guess[i]))
             {
                 pm++;
             }

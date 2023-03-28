@@ -41,4 +41,11 @@ public static class Utils
     {
         return $"{input[0].ToString().ToUpper()}{input.Substring(1)}";
     }
+    public static void LogColored(string text,ConsoleColor color){
+    Console.ForegroundColor = ConsoleColor.White;  
+    Console.BackgroundColor = color;  
+    System.Console.Write(text);
+    Console.ForegroundColor = ConsoleColor.White;  
+    Console.BackgroundColor = ConsoleColor.Black; 
+    }
 }

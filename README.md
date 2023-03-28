@@ -1,6 +1,6 @@
 # zzDatsPrakse
 
-2. uzdevums
+## 2. uzdevums
 Uzrakstīt funkciju, kas veic teksta tulkošanu. Funkcijai kā ieejas parametrs tiek padots tulkojamais teksts. Papildus ir zināmi vārdi, kas nav jātulko. Ja funkcija saņem kādu vārdu, kam tulkojums nav zināms, tad vārds tiek aizstāts ar "__". Funkcija rezultātu papildus izdrukā konsolē.
 Uzdevumā izmanto tulkojumus - "I": "es", "WANT": "gribu", "FIND": "atrast", "JOB": "darbu", "GOOD":"labu"
 Uzdevumā izmanto izlaižamos vārdus - "a", "to"
@@ -11,7 +11,7 @@ Saņem: "I want to find a good job", atgriež: "Es gribu atrast labu darbu"
 
 JS:https://jsfiddle.net/AlexBarDev/Loyndv4a/46/
 
-3. uzdevums
+## 3. uzdevums
 Izveidot skaitļa minēšanas spēli valodā.
 
 Pēc katras minēšanas programmā tiek parādīts ziņojums "Pareizi minēti:pm; Precīzā vietā:pv", kur:
